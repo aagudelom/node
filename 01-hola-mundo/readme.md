@@ -1,0 +1,1 @@
+Para ejeuctar la aplicación debemos abrir la consola en la ruta de estos fichero y escribir en la consola node app.js
