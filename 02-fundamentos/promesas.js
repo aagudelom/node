@@ -1,3 +1,9 @@
+/**
+ * Una Promise (promesa en castellano) es un objeto que representa la terminación o el fracaso eventual de una operación asíncrona. Dado que la mayoría de las personas consumen promises ya creadas, esta guía explicará primero cómo consumirlas, y luego  cómo crearlas.
+ * Esencialmente, una promesa es un objeto devuelto al cuál se adjuntan funciones callback, en lugar de pasar callbacks a una función.
+ * https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Usar_promesas
+ */
+
 let empleados = [{
     id: 1,
     nombre: 'Fernando'
