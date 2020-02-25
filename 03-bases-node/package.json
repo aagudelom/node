@@ -8,10 +8,6 @@
   },
   "author": "Alejandro Agudelo Mejia",
   "license": "ISC",
-  "dependencies": {
-    "yargs": "^15.1.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.2"
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }
