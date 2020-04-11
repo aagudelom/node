@@ -6,6 +6,12 @@ let comando = argv._[0];
 switch (comando) {
     case 'listar':
         console.log('listar');
+        let listado = porHacer.listarDB();
+        for (let tarea of listado) {
+            console.log("========Listado======");
+            console.log(tarea);
+            console.log("=====================");
+        }
         break;
     case 'crear':
         console.log('crear');
@@ -16,6 +22,13 @@ switch (comando) {
         break;
     case 'actualizar':
         console.log('actualizar');
+        let realizado = porHacer.actualizar(argv.descripcion, argv.completado);
+        if (realizado) {
+            console.log("Regitro actualizado");
+        } else {
+            console.log("Registro no actualizado");
+        }
+        break;
     default:
         console.log('Comando no reconocido');
 }

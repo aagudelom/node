@@ -11,7 +11,7 @@ const actualizar = {
         demand: true,
         alias: 'd'
     },
-    compleado: {
+    completado: {
         demand: true,
         alias: 'c',
         default: true,
@@ -22,6 +22,7 @@ const actualizar = {
 const argv = require('yargs')
     .command('crear', 'Crea un elemento por hacer', crear)
     .command('actualizar', 'Actualiza el estado completado de una tarea', actualizar)
+    .command('listar', 'Imprime los elementos de la base de datos')
     .help()
     .argv;
 

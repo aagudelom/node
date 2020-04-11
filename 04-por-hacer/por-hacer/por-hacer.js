@@ -3,6 +3,9 @@ const fs = require('fs');
 let listadoPorHacer = [];
 
 const crear = (descripcion) => {
+
+    cargarDB();
+
     let porHacer = {
         descripcion,
         completado: false
@@ -13,6 +16,25 @@ const crear = (descripcion) => {
     guardarBD().then(msg => console.log(msg)).catch(e => console.log(e));
     return porHacer;
 
+}
+
+const listarDB = () => {
+    cargarDB();
+    return listadoPorHacer;
+}
+
+const actualizar = (descripcion, completado = true) => {
+    cargarDB();
+
+    let index = listadoPorHacer.findIndex(tarea => tarea.descripcion == descripcion);
+
+    if (index >= 0) {
+        listadoPorHacer[index].completado = completado;
+        guardarBD();
+        return true;
+    } else {
+        return false;
+    }
 }
 
 const guardarBD = () => {
@@ -29,6 +51,16 @@ const guardarBD = () => {
     });
 }
 
+const cargarDB = () => {
+    try {
+        listadoPorHacer = require('../db/data.json');
+    } catch (err) {
+        listadoPorHacer = [];
+    }
+}
+
 module.exports = {
-    crear
+    crear,
+    listarDB,
+    actualizar
 }
