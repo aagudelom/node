@@ -37,6 +37,15 @@ const actualizar = (descripcion, completado = true) => {
     }
 }
 
+const eliminar = (descripcion) => {
+    cargarDB();
+    let newLista = listadoPorHacer.filter(tarea => tarea.descripcion !== descripcion);
+    console.log(newLista);
+    listadoPorHacer = newLista;
+    guardarBD();
+    return true;
+}
+
 const guardarBD = () => {
     return new Promise((resolve, reject) => {
         if (listadoPorHacer.length == 0) {
@@ -62,5 +71,6 @@ const cargarDB = () => {
 module.exports = {
     crear,
     listarDB,
-    actualizar
+    actualizar,
+    eliminar
 }

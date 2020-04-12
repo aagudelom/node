@@ -29,6 +29,10 @@ switch (comando) {
             console.log("Registro no actualizado");
         }
         break;
+    case 'eliminar':
+        console.log('Eliminar');
+        porHacer.eliminar(argv.descripcion);
+        break;
     default:
         console.log('Comando no reconocido');
 }
