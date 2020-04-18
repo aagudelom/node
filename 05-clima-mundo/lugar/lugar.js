@@ -2,6 +2,10 @@ const axios = require('axios');
 
 const getLugarLatLng = async(direccion) => {
 
+    if (!direccion) {
+        throw new Error('El campo cadena es obligatorio');
+    }
+
     const encodeUrl = encodeURI(direccion);
     console.log(encodeUrl);
 
