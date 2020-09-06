@@ -1,1 +1,4 @@
 npm init
+npm install express --save
+crear fichero server.js
+npm install -g nodemons
