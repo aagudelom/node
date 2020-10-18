@@ -1,0 +1,24 @@
+npm init
+npm install express --save
+crear fichero server.js
+npm install -g nodemons
+nodemon server1.js
+creamos la carpeta public con el fichero index.html
+http://localhost:3000/ --> Cargará la pagina index.html
+Si creamos otra pagina toca que ingresar la url completa ejemplo:
+http://localhost:3000/home.html
+descargamos bootstrap para copiar solo los elementos que necesitamos, en este caso dist -> css y js
+también es posible descargarlo con npm install bootstrap, pero, no tendriamos control de solo lo necesario
+Meter bootstrap dentro de assets
+Por otra parte es necesario crear dentro de la carpeta assets un fichero style.css con el siguiente contenido:
+footer {
+    background-color: #353A3F;
+    color: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    padding: 20px;
+}
+https://handlebarsjs.com/
+npm install hbs
