@@ -22,3 +22,8 @@ footer {
 }
 https://handlebarsjs.com/
 npm install hbs
+
+del fichero home.hbs cortamos el trozo de nav para llevarlo a parciales/navbar.hbs además en el fichero server4 debe crease la declaración
+así como llevamos el navbar también podemos llevar el head
+Para que nodemon este pendiente de cualquier cambio poner
+nodemon server -e js,hbs,html,css
