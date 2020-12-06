@@ -1,8 +1,11 @@
 {
-  "name": "06-webserver",
+  "name": "cideca",
   "version": "1.0.0",
-  "description": "",
+  "description": "cideca app",
   "main": "index.js",
+  "engines": {
+    "node": "12.x"
+  },
   "scripts": {
     "start": "node server.js",
     "nodemon": "nodemon server.js",
