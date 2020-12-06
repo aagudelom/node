@@ -28,3 +28,6 @@ así como llevamos el navbar también podemos llevar el head
 Para que nodemon este pendiente de cualquier cambio poner
 nodemon server -e js,hbs,html,css
 uso de hbs con helpers/funciones y además pasando parámetros
+modificar el fichero package.json y configurar el parámetro star u otros más como nodemon
+npm start
+npm run nodemon
