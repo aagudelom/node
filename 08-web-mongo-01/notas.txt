@@ -1,0 +1,6 @@
+npm init -y
+npm install express --save
+crear las peticiones put, post, delete, get
+npm install body-parser --save
+Con esa es posible leer los parametros que entran en la aplicación.
+Implementación de control de respuesta.
