@@ -1,0 +1,4 @@
+npm init -y
+npm install express --save
+npm install mongoose
+https://deskevinmendez.medium.com/login-y-register-con-nodejs-express-jwt-y-mongodb-ff329ed25a3f
